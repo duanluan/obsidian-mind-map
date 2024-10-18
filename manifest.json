@@ -1,0 +1,11 @@
+{
+  "id": "obsidian-mind-map",
+  "name": "Mind Map in Obsidian",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "集成 https://github.com/wanglin2/mind-map",
+  "author": "duanluan",
+  "authorUrl": "https://github.com/duanluan",
+  "fundingUrl": "https://obsidian.md/pricing",
+  "isDesktopOnly": false
+}
