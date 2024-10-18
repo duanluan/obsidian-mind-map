@@ -3,8 +3,11 @@ import {SmmlView, VIEW_TYPE_SMML} from "./view"
 
 export default class MindMapPlugin extends Plugin {
   async onload() {
+    // 底部状态栏，不适用移动端
+    const statusBarItemEl = this.addStatusBarItem();
+
     // 注册视图，读写思维导图文件
-    this.registerView(VIEW_TYPE_SMML, (leaf: WorkspaceLeaf) => new SmmlView(leaf));
+    this.registerView(VIEW_TYPE_SMML, (leaf: WorkspaceLeaf) => new SmmlView(leaf, statusBarItemEl));
     // 注册文件扩展名
     this.registerExtensions(["smml"], VIEW_TYPE_SMML);
 
